@@ -1,0 +1,62 @@
+========================================English===============================================
+Hello Programmer, this is the EscapeRoom 2.0 Project for ETEC Pedro Ferreira Alves.
+
+To make this program functional, follow these steps:
+
+1. Run composer install to install all dependencies.
+
+2. Copy the environment example file by running:
+
+cp .env.example .env
+
+3. Finally, apply the database migrations and seeders with:
+
+php artisan migrate --seed
+
+Additionally, the source code has been modified for specific functionality, 
+allowing the game to communicate between different computers or browsers. 
+You will need to make the following modification as well:
+
+Navigate to: (application directory)/vendor/laravel/framework/src/Illuminate/Session/Store.php
+
+At line 672, replace:
+
+return Str::random(40);
+
+with:
+
+return 'session';
+
+Now, you can enjoy the game/code! :)
+
+==========================================Portugês=================================================
+
+Olá Programador, este é o Projeto EscapeRoom 2.0 para a ETEC Pedro Ferreira Alves.
+
+Para tornar este programa funcional, siga estas etapas:
+
+1. Execute o composer install para instalar todas as dependências.
+
+2. Copie o arquivo de exemplo do ambiente executando:
+
+cp .env.example .env
+
+3. Por fim, aplique as migrações e informações de banco de dados com:
+
+php artisan migrate --seed
+
+Além disso, o código-fonte foi modificado para funcionalidades específicas, 
+permitindo que o jogo se comunique entre diferentes computadores ou navegadores. 
+Você também precisará fazer a seguinte modificação:
+
+Navegue para: (diretório na sua maquina)/vendor/laravel/framework/src/Illuminate/Session/Store.php
+
+Na linha 672, substitua:
+
+return Str::random(40);
+
+com:
+
+return 'session';
+
+Agora você pode aproveitar o jogo/código! :)
