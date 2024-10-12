@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: radial-gradient(circle, #ffffff, #000000);
+    text-align: center;
+}
+
+#text2{
+    border: 2px solid black;
+    border-radius: 1em;
+    font-size: 5em;
+    margin: 1% 25% 1% 25%;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#container{
+    width: 508px;
+    height: 502px;
+    position: relative;
+    margin: 4% auto;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: rgb(75, 83, 83);
+}
+
+.card{
+    width: 160px;
+    height: 240px;
+    position: absolute;
+    border-radius: 10px;
+    perspective: 600px;
+}
+
+.face{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   border-radius: 10px;
+   transition: all 1s;
+   backface-visibility: hidden;
+}
+
+.back{
+    background-image: url("../img/verso.jpg");
+    background-size: 160px 240px;
+}
+
+.back.flipped{
+    transform: rotateY(180deg);
+}
+
+.front{
+    transform: rotateY(-180deg);
+}
+
+.front.flipped{
+    transform: rotateY(0deg);
+}
+
+.card:hover{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+
+#modalGameOver{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.152);
+    background-size: 100% 100%;
+    z-index: -2;
+    opacity: -1;
+}
+
+img{
+    margin-top: 3%;
+}
+
+.face.flipped.match{
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+#imgMatchSign{
+    position: relative;
+    top: 1px;
+    bottom: 1px;
+    width: 400px;
+    height: 400px;
+    transition-property: top, opacity;
+    transition-duration: 1.5s;
+    opacity: 1;
+    z-index: 1;
+}

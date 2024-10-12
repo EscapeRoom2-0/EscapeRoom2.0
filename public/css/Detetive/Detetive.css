@@ -1,0 +1,75 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fundo escuro para imersão */
+}
+
+#gameContainer {
+    position: relative;
+    max-width: 900px; /* Largura aumentada para uma experiência mais ampla */
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.9); /* Efeito de sombra dramático */
+    background: rgba(0, 0, 0, 0.8); /* Fundo mais escuro e translúcido */
+}
+
+#BackGroundImage {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.item {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+    opacity: 0.8; /* Leve transparência ao hover */
+}
+
+#passwordScreen, #resultado {
+    padding: 50px;
+    text-align: center;
+}
+
+#passwordScreen {
+    background-color: #28a745; /* Sucesso - Verde */
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.7); /* Efeito de brilho verde */
+}
+
+#resultado {
+    background-color: #dc3545; /* Perigo - Vermelho */
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.7); /* Efeito de brilho vermelho */
+}
+
+#tempo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #ff0000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace; /* Estilo digital para o temporizador */
+    border: 3px solid #ff0000;
+}
+
+.footer {
+    background-color: #212529; /* Tom mais escuro */
+}
+
+.footer p {
+    color: white;
+    font-size: 16px;
+}
+
+.footer img {
+    padding: 0;
+}
